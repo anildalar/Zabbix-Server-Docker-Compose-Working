@@ -1,7 +1,7 @@
 services:
   # Zabbix MySQL Database
   zabbix-db:
-    image: mysql:latest
+    image: mysql:9.0
     container_name: zabbix-db
     command: --character-set-server=utf8mb4 --collation-server=utf8mb4_bin --log-bin-trust-function-creators=1
     environment:
